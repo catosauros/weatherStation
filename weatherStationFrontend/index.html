@@ -8,21 +8,27 @@
         <header>
             <nav>
                 <ul>
-                    <li>thursday jan 9 2025</li>
+                    <li class="left"><div id="dateTime" onload="showDateTime()"></div></li>
                     <li>battery: 100%</li>
                 </ul>
             </nav>
             <h1>weather station</h1>
         </header>
-
+      
         
         <section>
-            <div class="card">
+            <div class="card" id="temp" onclick="showTemp()">
                 <h1>23°</h1>
                 <div class="container">
                     <h3><b>temperature</b></h3>
                 </div>
             </div>
+            <div class="report" id="tempReport">
+                <h1>what a pretty report</h1>
+                <img src="img/Polynomial_of_degree_three.svg.png" width="50%"/>
+                <button onclick="hideTemp()" class="close">x</button>
+            </div>
+            <div id="shadow"></div>
 
           
             <div class="card">
@@ -67,4 +73,6 @@
         
         <footer><h3> made by meee </h3></footer>
     </body>
+    <script src="script.js"></script>
+
 </html>

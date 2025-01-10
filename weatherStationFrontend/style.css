@@ -10,24 +10,32 @@ h3{
 } */
 section {
     color: black;
-    margin: 20px;
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+
 ul {
-    margin: 0;
+    margin: 20px 0 0 0;
     padding: 0;
     list-style-type:none;
+    display: flex;
+    width: 100%;
 }
 
 li {
-    display: inline-block;
-    margin: 0px 100px 0px 0px;
     font-size:20px;
 }
 
+.left {
+    margin-right: auto;
+}
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -35,10 +43,44 @@ li {
     margin: 20px;
     flex:1;
     text-align: center;
-
 }
 
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+.report {
+    display: none;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    z-index: 999;
+    box-shadow: 100% rgba(0, 0, 0, 0.3);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:60%;
+    height: 40%;
+    
+}
+
+.close {
+    position:absolute;
+    top:0;
+    right:0;
+}
+
+.shadow {
+    display: block; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 1); /* Semi-transparent shadow */
+    z-index: 998; /* Below the plane but above everything else */
+}
+
+footer, header{
+    margin: 0px 20px 0px 20px;
+}
