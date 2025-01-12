@@ -1,13 +1,25 @@
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-/* h1 {
-    margin:20px 0px 0px 40px;
+    color: black;
 }
 
-h3{
-    margin:20px 0px 0px 40px;
-} */
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.main {
+    position: relative;
+    display: block;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    padding: 20px;
+}
+
 section {
     color: black;
     display: flex;
@@ -43,31 +55,36 @@ li {
     margin: 20px;
     flex:1;
     text-align: center;
+    background-color: #eeeeff;
 }
 
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
-
+.close:hover {
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
+}
 .report {
-    display: none;
+    position: relative;
+    display: block;
     text-align: center;
     background-color: rgb(255, 255, 255);
-    position: absolute;
-    z-index: 999;
-    box-shadow: 100% rgba(0, 0, 0, 0.3);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width:60%;
-    height: 40%;
-    
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    padding: 20px;
 }
 
 .close {
-    position:absolute;
+    position: absolute;
     top:0;
     right:0;
+    width: 40px;
+    height:40px;
+    font-size: large;
+    background-color: #eeeeff;
+    transition: 0.3s;
+
 }
 
 .shadow {
@@ -83,4 +100,5 @@ li {
 
 footer, header{
     margin: 0px 20px 0px 20px;
+    background-color: #eeeeff;
 }
