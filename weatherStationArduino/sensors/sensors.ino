@@ -76,16 +76,7 @@ void setup() {
 
   setupWatchdog();
   pinMode(LED_BUILTIN, OUTPUT);
-  // lcd.print("beeb boop");
-  // lcd.createChar(0, heart);
-  // lcd.createChar(1, robot);
-  // lcd.createChar(2, cat);
-  // lcd.setCursor(10, 0);
-  // lcd.write(byte(1));
-  // lcd.setCursor(0, 1);
-  // lcd.write(byte(0));
-  // lcd.setCursor(1, 1);
-  // lcd.write(byte(2));
+
 }
 
 void loop() {
@@ -119,7 +110,8 @@ void loop() {
     lcd.backlight();
 
     yawnAnim();
-
+    // lcdPrintStats(t, h, hic, raindrops, light, motor, solar, bat);
+    // delay(1000);
     lcd.clear();
     lcd.noBacklight();
     lcd.noDisplay();
